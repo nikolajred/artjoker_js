@@ -1,8 +1,8 @@
 # Created by .ignore support plugin (hsz.mobi)
- .idea/
+
 
 .idea/.gitignore
 .idea/artjoker_js.iml
 .idea/misc.xml
 .idea/modules.xml
-
+ .idea/*

@@ -1,21 +1,22 @@
-function memoize(recursiveFunction) {
+"use strict";
+
+function addFactorialInCash(func) {
     let cache = {};
     return function () {
         let key = JSON.stringify(arguments);
         if (cache[key]) {
             return cache[key];
         } else {
-            let val = recursiveFunction.apply(this, arguments);
+            let val = func.apply(this, arguments);
             cache[key] = val;
             return val;
         }
     }
 }
 
-let factorial = memoize(function(n) {
-    console.log("computing factorial of: ", n);
-    if(n === 1) return 1;
-    return n * factorial(n-1);
+let calcFactorial = addFactorialInCash(function(number) {
+    if(number === 1) return 1;
+    return number * calcFactorial(number-1);
 });
 
-console.log(factorial(3));
+console.log(calcFactorial(3));

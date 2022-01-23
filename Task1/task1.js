@@ -1,5 +1,6 @@
-const arrayNumbersOfFibonacci = [];
+"use strict";
 
+const arrayNumbersOfFibonacci = [];
 
 let addFibonacciInCash = (func) => {
     let memoizedKeyValues = [];
