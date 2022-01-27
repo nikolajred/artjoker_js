@@ -17,7 +17,7 @@ let matrixB = [
     [16, 17, 18]
 ];
 
-// let matrixBTrasform = [
+// let matrixBTransform = [
 //     [10, 13, 16],
 //     [11, 14, 17],
 //     [12, 15, 18]
