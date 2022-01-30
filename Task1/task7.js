@@ -1,41 +1,5 @@
 "use strict";
 
-let matrixA = [
-    [1, 2 , 3],
-    [4, 5, 6],
-    [7, 8, 9]
-];
-// let matrixATransform = [
-//     [1, 4 , 7],
-//     [2, 5, 8],
-//     [3, 6, 9]
-// ];
-
-let matrixB = [
-    [10, 11, 12],
-    [13, 14, 15],
-    [16, 17, 18]
-];
-
-// let matrixBTransform = [
-//     [10, 13, 16],
-//     [11, 14, 17],
-//     [12, 15, 18]
-// ];
-
-let matrixC = [
-    [1, 2, 3, 4],
-    [5, 6, 7, 8],
-    [9, 10, 11, 12]
-]
-
-// let matrixCTransform = [
-//     [1, 5, 9],
-//     [2, 6, 10],
-//     [3, 7, 11],
-//     [4, 8, 12]
-// ];
-
 let checkLengthRows = matrix => {
     let lengthRows = 0;
     for (let i = 0; i < matrix.length; i++){
@@ -80,6 +44,44 @@ let sumMatrix = (matrixFirst, matrixSecond) =>{
     } return newMatrix;
 
 }
+
+
+let matrixA = [
+    [1, 2 , 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+// let matrixATransform = [
+//     [1, 4 , 7],
+//     [2, 5, 8],
+//     [3, 6, 9]
+// ];
+
+let matrixB = [
+    [10, 11, 12],
+    [13, 14, 15],
+    [16, 17, 18]
+];
+
+// let matrixBTransform = [
+//     [10, 13, 16],
+//     [11, 14, 17],
+//     [12, 15, 18]
+// ];
+
+let matrixC = [
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 10, 11, 12]
+]
+
+// let matrixCTransform = [
+//     [1, 5, 9],
+//     [2, 6, 10],
+//     [3, 7, 11],
+//     [4, 8, 12]
+// ];
+
 
 console.log(transformMatrix(matrixA));
 console.log(transformMatrix(matrixB));
